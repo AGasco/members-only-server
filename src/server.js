@@ -1,7 +1,13 @@
 import express from 'express';
 import bodyParser from 'body-parser';
+import { applicationDefault, initializeApp } from 'firebase-admin/app';
 import { db } from './db';
 import { routes } from './routes';
+
+initializeApp({
+  credential: applicationDefault(),
+  databaseURL: 'https://members-only.firebaseio.com'
+});
 
 const app = express();
 
