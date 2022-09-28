@@ -9,7 +9,7 @@ export const createGroupRoute = {
     const { name } = req.body;
 
     if (!token) {
-      res
+      return res
         .status(401)
         .json({ message: 'Must be authenticated to create a group' });
     }

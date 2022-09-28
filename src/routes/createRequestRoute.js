@@ -3,7 +3,7 @@ import { createJoinRequest } from '../db';
 
 export const createRequestRoute = {
   method: 'post',
-  path: '/groups/:id/request',
+  path: '/groups/:id/requests',
   handler: async (req, res) => {
     const token = req.headers.authtoken;
     const { id } = req.params;

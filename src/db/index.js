@@ -1,6 +1,14 @@
 export { db } from './db';
+export { acceptRequest } from './acceptRequest';
+export { addMessageToGroup } from './addMessageToGroup';
 export { createGroup } from './createGroup';
+export { createJoinRequest } from './createJoinRequest';
+export { getGroup } from './getGroup';
 export { getAllGroups } from './getAllGroups';
+export { getMemberPopulatedGroup } from './getMemberPopulatedGroup';
+export { getMessagesForGroup } from './getMessagesForGroup';
+export { getOwnerPopulatedGroup } from './getOwnerPopulatedGroup';
+export { getRequestsForGroup } from './getRequestsForGroup';
 export { getUserGroups } from './getUserGroups';
 export { getUser } from './getUser';
-export { createJoinRequest } from './createJoinRequest';
+export { rejectRequest } from './rejectRequest';
